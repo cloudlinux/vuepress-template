@@ -322,10 +322,18 @@ Option can be one or few of the optional arguments listed above and one more.
 
 | | |
 |-|-|
+|`--order-by [ORDER_BY [ORDER_BY ...]]` |Sorting order.|
+|`--limit`|Limits the output with specified number of IPs.<br>Must be a number greater than zero. By default, equals 100.|
+|`--by-country-code [country_code]`|Filters output by country code.<br>Requires valid country code as argument.<br>Find valid country codes<br>in [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#IPv4_CIDR_blocks) in column ISO ALPHA-2 CODE.|
 |`--period [period]`|Timeframe.<br>Allows to specify the amount of time starting from the current day.<br>Should be greater than (or equal to) 1 minute.<br>Can be specified in format:<ul><li>`<int>m` – minutes, example ` --period 30m`</li><li>`<int>h` – hours, example `--period 4h`</li><li>`<int>d` – days, example `--period 7d`</li><li>`today` – for today, example `--period today`</li><li>`yesterday` – for yesterday, example `--period yesterday`</li></ul>For example, ` --period 5d` will return a list of incidents for 5 days. |
 |`--since [timestamp]`|allows to set start time to filter the list of incidents by period|
 |`--to [timestamp]`|allows to set finish time to filter the list of incidents by period|
 |`--severity`|allows to set severity to filter the list of incidents|
+|`--offset OFFSET`|	Offset for pagination. By default, equals 0|
+|`--by-abuser-ip [BY_ABUSER_IP]`| selection based on abuser IP address|
+|`--json`| return data in JSON format |
+|`--search`|string to search incidents by|
+|`--by-list`|Can be:<br><ul><li>any</li><li>gray (Gray List)</li><li>white (White List)</li><li>black (Black List)</li></ul>Filters output based on the list type.<br>Example: `--by-list black`.|
 
 _Example:_
 
