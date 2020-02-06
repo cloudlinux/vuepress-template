@@ -55,7 +55,7 @@ Available commands:
 |<span class="notranslate">`proactive`</span><sup>3.7.0+</sup>|Allows to manage Proactive Defense feature|
 |<span class="notranslate">`check modsec directives `</span><sup> Beta 3.9.0+ cPanel</sup>|Allows to check whether the global ModSecurity<br>directives have values recommended by Imunify360|
 |<span class="notranslate">`fix modsec directives `</span><sup> Beta 3.9.0+ cPanel</sup>|Fixes the non-recommended values (sets them to ones<br>recommended by Imunify360)|
-|<span class="notranslate">`feature-management`</span>| manage Imunify360 features available for users|
+|<span class="notranslate">`n`</span>| manage Imunify360 features available for users|
 |<span class="notranslate">`feature-management native enable`<sup> Beta 4.0+ cPanel</sup></span>|activate the Native Features Management using WHM/cPanel package extensions.|
 |<span class="notranslate">`feature-management native disable`<sup> Beta 4.0+ cPanel</sup></span>|deactivate the Native Features Management using WHM/cPanel package extensions and return the original Imunify360 Features Management back.|
 |<span class="notranslate">`backup-systems`</span>|allows to manage CloudLinux Backup|
