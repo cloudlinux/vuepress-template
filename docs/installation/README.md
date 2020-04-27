@@ -31,6 +31,16 @@ _<span class="notranslate">ISPManager</span> - soon after._
 * <span class="notranslate">Firefox</span> version 28 or later
 * <span class="notranslate">Edge</span> version 17 or later
 
+**Supported Web-servers**
+* <span class="notranslate">Apache</span>
+* <span class="notranslate">LiteSpeed</span> 
+
+:::warning Warning
+If you use Nginx as a proxy webserver (front-end) in conjunction with Apache (back-end), then it is possible to use Imunify360
+Otherwise, Im360 will not work since ModSecurity v 2.9 does not support the Nginx at this moment.
+:::
+
+
 ## Side by side installation with another <span class="notranslate">IDS</span>
 
 **Compatible**
