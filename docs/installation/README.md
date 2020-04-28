@@ -31,6 +31,11 @@ _<span class="notranslate">ISPManager</span> - soon after._
 * <span class="notranslate">Firefox</span> version 28 or later
 * <span class="notranslate">Edge</span> version 17 or later
 
+**Supported Web-servers**
+* <span class="notranslate">Apache</span>
+* <span class="notranslate">LiteSpeed</span> 
+* <span class="notranslate">OpenLiteSpeed</span> 
+
 ## Side by side installation with another <span class="notranslate">IDS</span>
 
 **Compatible**
