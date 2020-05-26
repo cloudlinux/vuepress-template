@@ -12,7 +12,7 @@ const slugifyLinks = (s) => {
 // set your global autometa options
 const autoMetaOptions = {
   site: {
-    name   : 'Imunify 360 docs',
+    name : 'Imunify 360 Documentation',
     // twitter: 'im_360_docs',
   },
   canonical_base: 'https://docs.imunify360.com/',
