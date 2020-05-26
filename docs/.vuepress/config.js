@@ -9,6 +9,15 @@ const slugifyLinks = (s) => {
   return _slugify(s);
 };
 
+// set your global autometa options
+const autoMetaOptions = {
+  site: {
+    name   : 'Imunify 360 docs',
+    // twitter: 'im_360_docs',
+  },
+  canonical_base: 'https://docs.imunify360.com/',
+};
+
 module.exports = {
   plugins: [
     ['container', {
@@ -31,7 +40,8 @@ module.exports = {
       {
         'ga': 'UA-12711721-12'
       }
-    ]
+    ],
+    [ 'autometa', autoMetaOptions ]
   ],
   configureWebpack: {
     resolve: {
