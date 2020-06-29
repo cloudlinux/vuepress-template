@@ -4275,6 +4275,11 @@ javascript-stringify@^2.0.1:
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-2.0.1.tgz#6ef358035310e35d667c675ed63d3eb7c1aa19e5"
   integrity sha512-yV+gqbd5vaOYjqlbk16EG89xB5udgjqQF3C5FAORDg4f/IS1Yc5ERCv5e/57yBcfJYw05V5JyIXabhwb75Xxow==
 
+jquery@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -7403,10 +7408,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-disqus@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/vue-disqus/-/vue-disqus-3.0.5.tgz#8d0dd5cabdba7c47f82d129d2907a64366842fa8"
-  integrity sha512-T3Y68lXf5W2lYt6j4Y3kZ4opLPH0EAzqriy11MS4D4Q2+UN0tFuUXeYP1MxfvdyaCEboXSM6CUswxsULuNV70Q==
+vue-disqus-spa@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vue-disqus-spa/-/vue-disqus-spa-0.1.0.tgz#8a42d50ddbe8f0c30298a3860a2fb3dc246209e1"
+  integrity sha512-JWM/gdAskBsBE6inKG1vudHN/L4tsJsIivbt7SBTHhvv3WNocPMZSZi2SA5NN0p1NI7VZDjX/7usvsF9eWKGpg==
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"
@@ -7525,12 +7530,20 @@ vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.0:
   dependencies:
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-disqus@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-disqus/-/vuepress-plugin-disqus-0.2.0.tgz#0a5bde424f81e0185eda36fba23d7ac4cae6ff07"
-  integrity sha512-kx+AeVzjJ9lx9bufLt1/X35V1VXfnQ1srkDMIzFKD9NyQ3eycsWQRcGO1dFe1HMrY3+7fTu+1/JeUEUEpGZ5tw==
+vuepress-plugin-disqus-spa@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-disqus-spa/-/vuepress-plugin-disqus-spa-0.1.1.tgz#ee511152687ab229f33e11c4e01f563b791e5402"
+  integrity sha512-s+EsevV4XZMdHvFWxKsBH6ISMvpDsq6ifzOZ7N2na1pHjNONLwI2SVh2QWlDCQJmm7lSCZ2PclMgjzHZi+PtcA==
   dependencies:
-    vue-disqus "^3.0.5"
+    jquery "^3.5.1"
+    vue-disqus-spa "^0.1.0"
+
+vuepress-plugin-separate-pages@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-separate-pages/-/vuepress-plugin-separate-pages-0.1.3.tgz#ff322ba9ab9cefd072506b2ef1456f6b5b22ab17"
+  integrity sha512-5hGI3VlIQtrIvUnWrqeOT2DKgR+BJbhJZdlENiD8LEjU/avZkebwuAfo4Kk7FEmXy+ALSCOfVpKKWw8rEquT3w==
+  dependencies:
+    jquery "^3.5.1"
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"

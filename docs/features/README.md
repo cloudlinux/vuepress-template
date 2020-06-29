@@ -128,11 +128,7 @@ Note that the plugin has three separate counters and a set of settings for USER/
 * If an IP is blocked by <span class="notranslate">`IP_LOCK_ATTEMPTS`</span>, then all users will not have access to the server from that specific blocked IP
 :::
 
-<div class="notranslate">
-
 ## Hooks
-
-</div>
 
 ### Overview
 

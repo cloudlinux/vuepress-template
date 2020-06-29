@@ -35,13 +35,14 @@ module.exports = {
       before: info => `<div class="danger custom-block"><p class="custom-block-title">${info}</p>`,
       after: '</div>',
     }],
-    ['disqus', { shortname: 'docsimunify360com' }],
+    ['disqus-spa', { shortname: 'docsimunify360com' }],
     ['@vuepress/google-analytics',
       {
         'ga': 'UA-12711721-12'
       }
     ],
-    [ 'autometa', autoMetaOptions ]
+    [ 'autometa', autoMetaOptions ],
+    [ 'separate-pages', { alwaysVisibleBlocks: ['#disqus_thread'] } ]
   ],
   configureWebpack: {
     resolve: {

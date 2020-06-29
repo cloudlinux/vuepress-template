@@ -47,11 +47,7 @@ To contact our support team in Imunify360 Admin Interface, please click the _Cal
 
 A support ticket will be created and an email will be sent to a specified email address. When a status of your request will change you receive a notification to your email address. You will be able to track your request via [https://cloudlinux.zendesk.com/hc/](https://cloudlinux.zendesk.com/hc/) and email.
 
-<div class="notranslate">
-
 ## Dashboard
-
-</div>
 
 You can access the Imunify360 Dashboard from your control panel. It shows security events as charts and heat maps.
 It's a great way to analyze incidents that happened within the past day, week or month.
