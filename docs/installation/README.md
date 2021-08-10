@@ -93,6 +93,9 @@ apt-get update
 
 </div>
 
+:::warning Warning
+For Plesk users: it is recommended to disable backports repository after Imunify360 installation as it isn't fully supported on Plesk servers.
+:::
 
 3. Log in with root privileges to the server where Imunify360 should be installed.
 
