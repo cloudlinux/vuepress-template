@@ -769,11 +769,16 @@ imunify360-agent feature-management [command] [--optional argument]...
 |<span class="notranslate">`native`</span>|allows to enable/disable the <span class="notranslate">Native Features Management</span> using WHM/cPanel package extensions|
 |<span class="notranslate">`show`</span>|allows to show enabled features|
 
-<span class="notranslate">`Optional argument`</span> for the <span class="notranslate">`enable/disable`</span> commands can be one of the following:
+The mandatory argument for the <span class="notranslate">`enable/disable`</span> command:
 
 | | |
 |-|-|
 |<span class="notranslate">`[--feature av]`</span>|enable/disable <span class="notranslate">Malware Cleanup</span>|
+	
+<span class="notranslate">`Optional argument`</span> for the <span class="notranslate">`enable/disable`</span> commands can be one of the following:
+
+| | |
+|-|-|
 <span class="notranslate">`[--feature proactive]`</span>|enable/disable <span class="notranslate">Proactive Defense</span>|
 |<span class="notranslate">`[--users [USERS [USERS ...]]]`</span>| specifies the list of users which will be affected, otherwise the default value will be changed|
 
