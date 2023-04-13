@@ -101,7 +101,7 @@ If your server's settings differ from the recommended, the Imunify Advisor will 
 
 #### **How to get a server key**
 
-There are two ways to get a server key.
+There are multiple ways to get a server key.
 
 1. Click the key symbol ![](/images/copy_key.png) to copy server key of the selected server to the clipboard.
 
@@ -109,6 +109,12 @@ There are two ways to get a server key.
    
    
   ![](/images/id_from_license.png)
+
+3. Extract `id` field using jq(JSON parsing and transformation tool).
+
+```
+jq .id /var/imunify360/license.json
+```
 
 #### **How to add a server**
 
