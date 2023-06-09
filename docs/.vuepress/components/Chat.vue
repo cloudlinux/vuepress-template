@@ -34,7 +34,8 @@ export default {
                 colorScheme: '#43a069',
                 boardContentBg: '#f4f4f4',
                 msgBubbleBgBot: '#fff',
-                msgBubbleBgUser: '#43a069'
+                msgBubbleBgUser: '#43a069',
+                inputPlaceholder: 'Ask a new question'
             },
             docName: "imunify360-doc"
         }
@@ -49,7 +50,6 @@ export default {
 
         this.connection.onmessage = (response) => {
             const event = JSON.parse(response.data)
-            console.log(event)
             this.messages.push({
                 agent: 'bot',
                 type: 'markdown',

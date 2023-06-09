@@ -6,7 +6,7 @@
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.4.1",
     "@vuepress/utils": "^2.0.0-alpha.1",
-    "cl-doc-vue-bot-ui": "0.0.30",
+    "cl-doc-vue-bot-ui": "0.0.33",
     "vue": "~2.5.16",
     "vue-server-renderer": "~2.5.16",
     "vue-template-compiler": "~2.5.16",

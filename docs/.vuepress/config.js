@@ -105,8 +105,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 //      description: "Документация Imunify360"
 //    }
   },
- theme: "cloudlinux",
-  // theme: '/Users/prefer/src/cloudlinux-doc-theme', // local path
+  theme: "cloudlinux",
+  // theme: '/Users/nikolaytelepenin/src/cloudlinux-doc-theme', // local path
   markdown: {
     slugify: slugifyLinks,
     toc: {
@@ -119,15 +119,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     editLinks: true,
     docsBranch: "dev",
     docsDir: "docs",
-
     translationSource: 'docs.imunify360.com',
     defaultURL: "/introduction/",
-    submitRequestURL: "https://www.imunify360.com/support-portal/",
     hideHeading: true,
     redirectionMapping: urls,
     sidebarDepth: 2,
     logo: "/logo.svg",
-    try_free: "https://www.imunify360.com/trial",
     social: [
       { url: "https://www.facebook.com/imunify360/", logo: "/fb.png" },
       { url: "https://twitter.com/imunify360/", logo: "/tw.png" },
@@ -148,8 +145,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         label: "English",
         // text for the edit-on-github link
         editLinkText: "Edit this page",
-        tryFree: "Try Free",
-        submitRequest: "Contact Support",
+        // tryFree: "Try Free",
+        // submitRequest: "Contact Support",
         search: "Search",
         // config for Service Worker
         serviceWorker: {
@@ -164,6 +161,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           appId: "0TCNL6CGX8"
         },
         stayInTouch: "Stay in touch",
+        navbarLinks: [
+          {
+            text: "Ask GPT?",
+            event: {
+              type: 'event',
+              name: 'botui-open'
+            }
+          },
+          {
+            text: "Contact Support",
+            url: "https://www.imunify360.com/support-portal/"
+          },
+          {
+            text: "Try Free",
+            url: "https://www.imunify360.com/trial"
+          }
+        ],
         bottomLinks: [
             {
                 text: "How to",

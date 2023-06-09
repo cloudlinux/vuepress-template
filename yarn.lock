@@ -2171,10 +2171,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cl-doc-vue-bot-ui@0.0.30:
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/cl-doc-vue-bot-ui/-/cl-doc-vue-bot-ui-0.0.30.tgz#0ac55983f5b6a3b5ad5ac11cd960a167a569f282"
-  integrity sha512-pR8auqn+eR5IF9XCtthw9x3J+KB87iRxzsQ9EEzsOy1FGzDVCdXQNQ4FCV6FoJGHzlOXu+KoCG5/4B4P0fZRCg==
+cl-doc-vue-bot-ui@0.0.33:
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/cl-doc-vue-bot-ui/-/cl-doc-vue-bot-ui-0.0.33.tgz#991944447800641e4bcec6bb0ae96188c9100441"
+  integrity sha512-RGVFhFKIy/uCyCiY98kZ3S7PHGQNuUzYsBg2IECMI3yM/K/EHXNP5sgmahXykpWn4+WK+QJsu0D2aIAnvCE6Hg==
   dependencies:
     vue-star-rating "^1.7.0"
 
@@ -3317,7 +3317,7 @@ extend-shallow@^3.0.0, extend-shallow@^3.0.2:
 extend@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/extend/-/extend-1.2.1.tgz#a0f5fd6cfc83a5fe49ef698d60ec8a624dd4576c"
-  integrity sha1-oPX9bPyDpf5J72mNYOyKYk3UV2w=
+  integrity sha512-2/JwIYRpMBDSjbQjUUppNSrmc719crhFaWIdT+TRSVA8gE+6HEobQWqJ6VkPt/H8twS7h/0WWs7veh8wmp98Ng==
 
 extend@~3.0.2:
   version "3.0.2"
@@ -3618,7 +3618,7 @@ gensync@^1.0.0-beta.1:
 geopattern@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/geopattern/-/geopattern-1.2.3.tgz#de96602e46dba9095ca5774bfb3b36308f7e63fe"
-  integrity sha1-3pZgLkbbqQlcpXdL+zs2MI9+Y/4=
+  integrity sha512-UzrR9D0xUrXx71ROZTKbTg1isWdcfcYAXsJrqtvhDkQV2JCsRyqws6TuqUdkBKncg5CPevb0vyXXUJrZpjGFXw==
   dependencies:
     extend "~1.2.1"
 
@@ -7918,18 +7918,13 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.3.3:
+vue@^2.3.3, vue@^2.5.16:
   version "2.7.14"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.7.14.tgz#3743dcd248fd3a34d421ae456b864a0246bafb17"
   integrity sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ==
   dependencies:
     "@vue/compiler-sfc" "2.7.14"
     csstype "^3.1.0"
-
-vue@^2.5.16:
-  version "2.6.14"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
-  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
 
 vue@^2.6.10:
   version "2.6.11"
@@ -7996,7 +7991,7 @@ vuepress-plugin-smooth-scroll@^0.0.3:
 
 "vuepress-theme-cloudlinux@https://github.com/cloudlinux/cloudlinux-doc-theme.git":
   version "0.0.1"
-  resolved "https://github.com/cloudlinux/cloudlinux-doc-theme.git#c1bc60a2c62fe481f01cc83f0437fd7bc52dc81e"
+  resolved "https://github.com/cloudlinux/cloudlinux-doc-theme.git#61206737098e317442333beb9c44327824ed653a"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.2"
     "@fortawesome/free-brands-svg-icons" "^5.2.0"
