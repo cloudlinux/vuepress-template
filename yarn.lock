@@ -2171,10 +2171,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-cl-doc-vue-bot-ui@0.0.33:
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/cl-doc-vue-bot-ui/-/cl-doc-vue-bot-ui-0.0.33.tgz#991944447800641e4bcec6bb0ae96188c9100441"
-  integrity sha512-RGVFhFKIy/uCyCiY98kZ3S7PHGQNuUzYsBg2IECMI3yM/K/EHXNP5sgmahXykpWn4+WK+QJsu0D2aIAnvCE6Hg==
+cl-doc-vue-bot-ui@0.0.34:
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/cl-doc-vue-bot-ui/-/cl-doc-vue-bot-ui-0.0.34.tgz#8536992e00f5095949204107c79d38f17431ec8b"
+  integrity sha512-olI38Jg6rvpePDFmQvnvM8ayFl2/u/FQs8Myr1U0gvcobLfIIzNRUnh6sR6UBpp1+Z86HFklJ4p6ln/tbd/fCg==
   dependencies:
     vue-star-rating "^1.7.0"
 
