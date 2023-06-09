@@ -53,7 +53,7 @@ module.exports = {
       {
         componentsDir: path.resolve(__dirname, './components'),
       },
-    ],
+    ]
   ],
   configureWebpack: {
     resolve: {

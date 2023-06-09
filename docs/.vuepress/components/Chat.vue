@@ -1,26 +1,29 @@
-<template lang="pug">
-#app
-    VueBotUI(
-        v-if="isConnected"
-        :messages="messages"
-        :options="botOptions"
-        :bot-typing="waitResponse"
-        :input-disable="waitResponse"
-        @msg-send="messageSendHandler"
-        @msg-to-server="messageToServer"
-    )
+<template lang="html">
+<ClientOnly>
+    <div id="app">
+        <VueBotUI
+            v-if="dynamicComponent && isConnected"
+            :is="dynamicComponent"
+            :messages="messages"
+            :options="botOptions"
+            :bot-typing="waitResponse"
+            :input-disable="waitResponse"
+            @msg-send="messageSendHandler"
+            @msg-to-server="messageToServer">
+        </VueBotUI>
+    </div>
+</ClientOnly>
 </template>
 <script>
 import BotIcon from 'cl-doc-vue-bot-ui/src/assets/icons/bot.png'
-import { VueBotUI } from 'cl-doc-vue-bot-ui'
 
 export default {
     components: {
-        BotIcon,
-        VueBotUI
+        BotIcon
     },
     data () {
         return {
+            dynamicComponent: null,
             messages: [],
             messageData: [],
             isConnected: false,
@@ -36,27 +39,11 @@ export default {
             docName: "imunify360-doc"
         }
     },
+    mounted(){
+        import('cl-doc-vue-bot-ui').then(module => {
+            this.dynamicComponent = module.VueBotUI
+        })   
 
-    methods: {
-    messageSendHandler (message) {
-        this.messages.push({
-            agent: 'user',
-            type: 'text',
-            text: message.text
-        })
-
-        this.connection.send(JSON.stringify({
-            'type': 'question',
-            'text': message.text,
-            'doc-name': this.docName
-        }))
-        this.waitResponse = true
-    },
-    messageToServer (message) {
-        this.connection.send(JSON.stringify({...{'doc-name': this.docName}, ...message}))
-    }
-    },
-    created () {
         console.log('Starting connection...')
         this.connection = new WebSocket('wss://doc-bot.cloudlinux.com')
 
@@ -85,14 +72,34 @@ export default {
         }
         
         this.connection.onopen = (event) => {
-            console.log('Successfully connected to the echo websocket server...')
+            console.log('Successfully connected to the websocket server...')
             this.isConnected = true
+        }
+
+    },
+    methods: {
+        messageSendHandler (message) {
+            this.messages.push({
+                agent: 'user',
+                type: 'text',
+                text: message.text
+            })
+
+            this.connection.send(JSON.stringify({
+                'type': 'question',
+                'text': message.text,
+                'doc-name': this.docName
+            }))
+            this.waitResponse = true
+        },
+        messageToServer (message) {
+            this.connection.send(JSON.stringify({...{'doc-name': this.docName}, ...message}))
         }
     }
 }
 
 </script>
-<style lang="scss">
+<style lang="stylus">
 #app {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
