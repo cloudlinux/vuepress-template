@@ -2282,13 +2282,6 @@ OK
 
 </div>
  
- Optional arguments:
-
-| | |
-|-|-|
-|<span class="notranslate">`--to`</span>|Email to send.|
-|<span class="notranslate">`--sender`</span>|User email.|
-
 ## Unregister
 
 Allows to unregister and disable Imunify360 on the server. 
